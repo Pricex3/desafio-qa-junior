@@ -1,0 +1,62 @@
+[
+  {
+    "testTitle": "Deve aplicar BEMVINDO10 na Camiseta Essencial (1 un.) e cobrar frete",
+    "dadosPedido": {
+      "produto": "Camiseta Essencial",
+      "preco": 59.9,
+      "quantidade": 1,
+      "cupom": { "codigo": "BEMVINDO10", "percentual": 10 }
+    },
+    "resultadoEsperado": {
+      "subtotal": 59.9,
+      "desconto": 5.99,
+      "frete": 19.9,
+      "total": 73.81
+    }
+  },
+  {
+    "testTitle": "Deve aplicar BEMVINDO10 no Tênis Casual Urbano (1 un.) e cobrar frete",
+    "dadosPedido": {
+      "produto": "Tênis Casual Urbano",
+      "preco": 189.9,
+      "quantidade": 1,
+      "cupom": { "codigo": "BEMVINDO10", "percentual": 10 }
+    },
+    "resultadoEsperado": {
+      "subtotal": 189.9,
+      "desconto": 18.99,
+      "frete": 19.9,
+      "total": 190.81
+    }
+  },
+  {
+    "testTitle": "Deve aplicar BEMVINDO10 na Jaqueta Corta-Vento (1 un.) com frete grátis",
+    "dadosPedido": {
+      "produto": "Jaqueta Corta-Vento",
+      "preco": 229.9,
+      "quantidade": 1,
+      "cupom": { "codigo": "BEMVINDO10", "percentual": 10 }
+    },
+    "resultadoEsperado": {
+      "subtotal": 229.9,
+      "desconto": 22.99,
+      "frete": 0,
+      "total": 206.91
+    }
+  },
+  {
+    "testTitle": "Deve aplicar BEMVINDO10 no Kit de Meias (3 un.) e cobrar frete",
+    "dadosPedido": {
+      "produto": "Kit 3 Pares de Meias",
+      "preco": 29.9,
+      "quantidade": 3,
+      "cupom": { "codigo": "BEMVINDO10", "percentual": 10 }
+    },
+    "resultadoEsperado": {
+      "subtotal": 89.7,
+      "desconto": 8.97,
+      "frete": 19.9,
+      "total": 100.63
+    }
+  }
+]

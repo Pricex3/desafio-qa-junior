@@ -1,0 +1,34 @@
+[
+  {
+    "testTitle": "Não deve aplicar desconto com cupom inválido",
+    "dadosPedido": {
+      "produto": "Camiseta Essencial",
+      "preco": 59.9,
+      "quantidade": 1,
+      "cupom": { "codigo": "CUPOMINVALIDO" }
+    },
+    "mensagemEsperada": "Cupom inválido.",
+    "resultadoEsperado": {
+      "subtotal": 59.9,
+      "desconto": 0,
+      "frete": 19.9,
+      "total": 79.8
+    }
+  },
+  {
+    "testTitle": "Não deve aplicar desconto com cupom expirado (VERAO2026)",
+    "dadosPedido": {
+      "produto": "Camiseta Essencial",
+      "preco": 59.9,
+      "quantidade": 1,
+      "cupom": { "codigo": "VERAO2026" }
+    },
+    "mensagemEsperada": "Cupom expirado.",
+    "resultadoEsperado": {
+      "subtotal": 59.9,
+      "desconto": 0,
+      "frete": 19.9,
+      "total": 79.8
+    }
+  }
+]
